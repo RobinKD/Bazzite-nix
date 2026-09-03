@@ -34,6 +34,15 @@ The `latest` tag will automatically point to the latest build. That build will s
 
 If build on Fedora Atomic, you can generate an offline ISO with the instructions available [here](https://blue-build.org/how-to/generate-iso/#_top). These ISOs cannot unfortunately be distributed on GitHub for free due to large sizes, so for public projects something else has to be used for hosting.
 
+The easiest way is to install the bluebuild CLI and do one of the following:
+```
+# Generate ISO from a built and published remote image
+sudo bluebuild generate-iso --iso-name weird-os.iso image ghcr.io/octocat/weird-os
+
+# Build image and generate ISO from a local recipe
+sudo bluebuild generate-iso --iso-name weird-os.iso recipe recipes/recipe.yml
+```
+
 ## Verification
 
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
