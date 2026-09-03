@@ -37,10 +37,10 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 The easiest way is to install the bluebuild CLI and do one of the following:
 ```
 # Generate ISO from a built and published remote image
-sudo bluebuild generate-iso --iso-name weird-os.iso image ghcr.io/octocat/weird-os
+sudo bluebuild generate-iso --iso-name filename-os.iso image ghcr.io/robinkd/bazzite-nix:latest
 
 # Build image and generate ISO from a local recipe
-sudo bluebuild generate-iso --iso-name weird-os.iso recipe recipes/recipe.yml
+sudo bluebuild generate-iso --iso-name filename-os.iso recipe recipes/recipe.yml
 ```
 
 ## Verification
