@@ -1,0 +1,30 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+type: default-flatpaks
+configurations:
+  - notify: true # Send notification after install/uninstall is finished (true/false)
+    scope: system
+    install: # system flatpaks we want all users to have and not remove
+      # Password manager
+      - com.bitwarden.desktop
+      # Settings, env and app management
+      - com.github.tchx84.Flatseal
+      - com.mattjakeman.ExtensionManager
+      - com.ranfdev.DistroShelf
+      - io.github.flattool.Warehouse
+      # Chat
+      - org.signal.Signal
+      - com.discordapp.Discord
+      - com.slack.Slack
+      # File transfer and backup
+      - org.localsend.localsend_app
+      - com.github.zocker_160.SyncThingy
+      # Virtualization
+      - org.virt_manager.virt-manager
+      - org.virt_manager.virt_manager.Extension.Qemu
+      # Other
+      - io.missioncenter.MissionCenter
+      - org.libreoffice.LibreOffice
+      - org.qbittorrent.qBittorrent
+  - scope: user # Also add Flathub user repo, but no user packages

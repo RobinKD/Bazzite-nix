@@ -1,0 +1,14 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
+
+type: dnf
+repos:
+  nonfree: rpmfusion
+install:
+  packages:
+    - btrfs-assistant # GUI for btrfs snaphots and other
+    - fd
+    - rg
+# group-install:
+#   packages:
+#     - development-tools
