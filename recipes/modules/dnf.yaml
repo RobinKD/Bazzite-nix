@@ -6,13 +6,7 @@ repos:
   nonfree: rpmfusion
 install:
   packages:
-    - firefox
-    - librewolf
     - btrfs-assistant # GUI for btrfs snaphots and other
-    - fd
-    - rg
-    - emacs
-    - hunspell-fr
     - libvirt
     - qemu-kvm
 # group-install:
