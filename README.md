@@ -2,7 +2,9 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-After setup, it is recommended you update this README to describe your custom image.
+This custom image has the purpose of integrating nix into a bazzite stable image, making a /nix directory and making it possible to use declarative configs through home-manager.
+
+It also installs some of the packages and flatpaks I want to have on my machine, which you can see in [dnf](https://github.com/RobinKD/Bazzite-nix/blob/main/recipes/modules/dnf.yaml) and [default flatpaks](https://github.com/RobinKD/Bazzite-nix/blob/main/recipes/modules/default-flatpaks.yaml).
 
 ## Installation
 
