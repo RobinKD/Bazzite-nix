@@ -4,6 +4,8 @@ See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup i
 
 This custom image has the purpose of integrating nix into a bazzite stable image, making a /nix directory and making it possible to use declarative configs through home-manager.
 
+It also installs some of the packages and flatpaks I want to have on my machine, which you can see in [dnf](https://github.com/RobinKD/Bazzite-nix/blob/main/recipes/modules/dnf.yaml) and [default flatpaks](https://github.com/RobinKD/Bazzite-nix/blob/main/recipes/modules/default-flatpaks.yaml).
+
 ## Installation
 
 > [!WARNING]  
