@@ -3,9 +3,9 @@
 
 type: dnf
 repos:
+  cleanup: true
   copr:
     - ashbuk/Hyprland-Fedora
-    cleanup: true
 install:
   packages:
     - hyprland
