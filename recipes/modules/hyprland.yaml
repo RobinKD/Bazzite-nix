@@ -11,7 +11,6 @@ install:
     - kitty
     - grim
     - slurp
-    - dunst
     - noctalia
     - hyprland
     - xdg-desktop-portal-hyprland
