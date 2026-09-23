@@ -1,17 +1,20 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/module-v1.json
 
-type: rpm-ostree
+type: dnf
 repos:
-  - https://copr.fedorainfracloud.org/coprs/ashbuk/Hyprland-Fedora/
+  copr:
+    - ashbuk/Hyprland-Fedora
+    cleanup: true
 install:
-  - hyprland
-  - hyprlock
-  - hypridle
-  - grim
-  - slurp
-  - hyprpaper
-  - swww
-  - waybar
-  - dunst
-  - xdg-desktop-portal-hyprland
+  packages:
+    - hyprland
+    - hyprlock
+    - hypridle
+    - grim
+    - slurp
+    - hyprpaper
+    - swww
+    - waybar
+    - dunst
+    - xdg-desktop-portal-hyprland
