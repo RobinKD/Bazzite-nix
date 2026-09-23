@@ -5,12 +5,22 @@ type: dnf
 repos:
   cleanup: true
   copr:
-    - ashbuk/Hyprland-Fedora
+    - lionheartp/Hyprland
 install:
   packages:
     - kitty
     - grim
     - slurp
     - noctalia
+    - aquamarine
+    - uwsm
     - hyprland
+    - hyprlang
+    - hyprcursor
+    - hyprgraphics
+    - hypridle
+    - hyprlock
     - xdg-desktop-portal-hyprland
+    - hyprsunset
+    - hyprutils
+    - hyprpolkitagent
