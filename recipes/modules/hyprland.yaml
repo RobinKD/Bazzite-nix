@@ -18,9 +18,5 @@ install:
     - hyprlang
     - hyprcursor
     - hyprgraphics
-    - hypridle
-    - hyprlock
     - xdg-desktop-portal-hyprland
-    - hyprsunset
     - hyprutils
-    - hyprpolkitagent
