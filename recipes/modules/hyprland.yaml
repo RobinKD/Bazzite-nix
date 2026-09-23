@@ -8,13 +8,9 @@ repos:
     - ashbuk/Hyprland-Fedora
 install:
   packages:
-    - hyprland
-    - hyprlock
-    - hypridle
     - grim
     - slurp
-    - hyprpaper
-    - swww
-    - waybar
     - dunst
+    - noctalia
+    - hyprland
     - xdg-desktop-portal-hyprland
