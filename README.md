@@ -3,6 +3,7 @@
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 This custom image has the purpose of integrating nix into a bazzite stable image, making a /nix directory and making it possible to use declarative configs through home-manager.
+There is also another custom image that integrates Hyprland + Noctalia into the bazzite + nix image.
 
 It also installs some of the packages and flatpaks I want to have on my machine, which you can see in [dnf](https://github.com/RobinKD/Bazzite-nix/blob/main/recipes/modules/dnf.yaml) and [default flatpaks](https://github.com/RobinKD/Bazzite-nix/blob/main/recipes/modules/default-flatpaks.yaml).
 
@@ -15,7 +16,11 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
+  # Base image with GNOME
   rpm-ostree rebase ostree-unverified-registry:ghcr.io/robinkd/bazzite-nix:latest
+
+  # Image with added Hyprland + Noctalia
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/robinkd/bazzite-nix-hyprland:latest
   ```
 - Reboot to complete the rebase:
   ```
