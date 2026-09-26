@@ -15,7 +15,7 @@ configurations:
       - io.github.flattool.Warehouse
       # Chat
       - org.signal.Signal
-      - com.discordapp.Discord
+      - dev.vencord.Vesktop
       - com.slack.Slack
       # File transfer and backup
       - org.localsend.localsend_app
@@ -24,6 +24,8 @@ configurations:
       - org.virt_manager.virt-manager
       - org.virt_manager.virt_manager.Extension.Qemu
       # Other
+      - com.dec05eba.gpu_screen_recorder
+      - io.github.ilya_zlobintsev.LACT
       - io.missioncenter.MissionCenter
       - org.libreoffice.LibreOffice
       - org.qbittorrent.qBittorrent
